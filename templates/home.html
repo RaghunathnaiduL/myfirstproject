@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+   <head>  <!-- Document Header Starts -->
+      <title>This is Homepage title</title>
+   </head> <!-- Document Header Ends -->
+
+   <body>
+     {% if messages %}
+     {% for message in messages %}
+     <div class="alert alert-{{ message.tags }}">
+       {{ message }}
+     </div>
+     {% endfor %}
+     {% endif %}
+      <p>Homepage content here.....</p>
+   </body>
+
+</html>
